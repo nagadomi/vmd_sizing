@@ -51,8 +51,8 @@ class CameraPanel(BasePanel):
         self.set_list_sizer = wx.BoxSizer(wx.VERTICAL)
         
         self.scrolled_window = CameraScrolledWindow(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, \
-                                                    wx.FULL_REPAINT_ON_RESIZE | wx.VSCROLL | wx.ALWAYS_SHOW_SB)
-        self.scrolled_window.SetScrollRate(5, 5)
+                                                    wx.FULL_REPAINT_ON_RESIZE | wx.VSCROLL)
+        #self.scrolled_window.SetScrollRate(5, 5)
 
         # スクロールバーの表示のためにサイズ調整
         self.scrolled_window.SetSizer(self.set_list_sizer)

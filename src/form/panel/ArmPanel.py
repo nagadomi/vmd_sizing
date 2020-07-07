@@ -440,7 +440,7 @@ class AvoidanceDialog(wx.Dialog):
         self.sizer.Add(self.static_line01, 0, wx.EXPAND | wx.ALL, 5)
 
         self.scrolled_window = wx.ScrolledWindow(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, \
-                                                 wx.FULL_REPAINT_ON_RESIZE | wx.HSCROLL | wx.ALWAYS_SHOW_SB)
+                                                 wx.FULL_REPAINT_ON_RESIZE | wx.HSCROLL)
         self.scrolled_window.SetScrollRate(5, 5)
 
         # 接触回避用剛体セット用基本Sizer

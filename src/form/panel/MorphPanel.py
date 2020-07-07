@@ -38,7 +38,7 @@ class MorphPanel(BasePanel):
         self.set_list_sizer = wx.BoxSizer(wx.VERTICAL)
         
         self.scrolled_window = wx.ScrolledWindow(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, \
-                                                 wx.FULL_REPAINT_ON_RESIZE | wx.VSCROLL | wx.ALWAYS_SHOW_SB)
+                                                 wx.FULL_REPAINT_ON_RESIZE | wx.VSCROLL)
         # self.scrolled_window.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_3DLIGHT))
         # self.scrolled_window.SetBackgroundColour("BLUE")
         self.scrolled_window.SetScrollRate(5, 5)
