@@ -12,10 +12,18 @@ Run
 python3 src/executor.py
 ```
 
-# Original README.md
+# Original README.md and Repository details
+
 
 # VMDサイジング
 
+## Description
+
+vmd(MMDモーションデータ)を、指定されたモデルに適用したサイズで再生成します。
+
+## Website
+
+https://www.nicovideo.jp/watch/sm35452570
 
 ## Dependencies
 
