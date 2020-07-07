@@ -145,8 +145,10 @@ class BaseFilePickerCtrl():
             self.parent.set_output_vmd_path(event, True)
         
     def disable(self):
-        self.file_ctrl.GetPickerCtrl().Disable()
-        self.file_ctrl.GetTextCtrl().Disable()
+        if self.file_ctrl.GetPickerCtrl():
+            self.file_ctrl.GetPickerCtrl().Disable()
+        if self.file_ctrl.GetTextCtrl():
+            self.file_ctrl.GetTextCtrl().Disable()
         
         if self.title_parts_ctrl:
             self.title_parts_ctrl.Disable()
@@ -158,8 +160,10 @@ class BaseFilePickerCtrl():
             self.file_parts_ctrl.Disable()
 
     def enable(self):
-        self.file_ctrl.GetPickerCtrl().Enable()
-        self.file_ctrl.GetTextCtrl().Enable()
+        if self.file_ctrl.GetPickerCtrl():
+            self.file_ctrl.GetPickerCtrl().Enable()
+        if self.file_ctrl.GetTextCtrl():
+            self.file_ctrl.GetTextCtrl().Enable()
         
         if self.title_parts_ctrl:
             self.title_parts_ctrl.Enable()
